@@ -9,7 +9,7 @@ form.addEventListener('submit', async (event) => {
     data.append('file', file.files[0]);
 
     try {
-        const response = await fetch('./upload', {
+        const response = await fetch('.', {
             method: 'POST',
             body: data
         });
@@ -21,4 +21,5 @@ form.addEventListener('submit', async (event) => {
     } catch (error) {
         console.error(error);
     }
+
 });
